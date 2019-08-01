@@ -1,0 +1,12 @@
+// (Summation of a series) Write a program that displays the result of 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10.
+
+public class S_06 {
+	public static void main(String[] args) {
+ 
+ //If you don't put parentheses inside numbers, while java compiler treats them as side-by-side and write side by side.
+ //Eğer işlemi toplarken dışına parantez koymazsanız,Java compilerı bunu yanyana yazması gerektiğini düşünür, toplama işlemini yerine getiremez.
+ 
+ System.out.println("Result is " + (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10));
+  }
+}
+ 
