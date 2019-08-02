@@ -1,0 +1,16 @@
+/*(Average speed in kilometers) Assume a runner runs 24 miles in 1 hour, 40 minutes,
+and 35 seconds. Write a program that displays the average speed in kilometers per
+hour. (Note that 1 mile is 1.6 kilometers.)
+*/
+
+public class S_12 {
+        public static void main(String[] args) {
+ 
+ //1.İlk önce 24 mil de koşucunun aldığı sürenin toplam sn değerini buluruz.-Find the total sec value of the time taken by the runner at 24 miles.-
+ //2.Toplam sn 24 mil'e bölererek 1 mildeki değerine ulaşırız.-Divide the total seconds by 24 miles to find 1-mile value.-
+ //3.Kilometre cinsinden olması içinde 1.6 ile çarparız.-Multiple with 1.6 to find kilometers value-
+     
+        System.out.println(24 / (1 + (40 + 35.0 / 60) / 60) * 1.6);
+ 
+        }
+}
