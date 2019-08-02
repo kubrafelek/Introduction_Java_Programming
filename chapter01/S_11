@@ -1,0 +1,27 @@
+/*(Population projection) The U.S. Census Bureau projects population based on the
+following assumptions:
+■ One birth every 7 seconds
+■ One death every 13 seconds
+■ One new immigrant every 45 seconds
+Write a program to display the population for each of the next five years. Assume the
+current population is 312,032,486 and one year has 365 days.
+*/
+
+public class S_11 {
+        public static void main(String[] args) {
+            
+            double numberOfBirthInSeconds  = 7.0;
+            double numberOfDeathInSeconds  = 13.0;
+            double numberOfImmigrantInSeconds = 45.0;
+            
+            double currentPopulation = 3_120_324_86;
+            double secondsInYear = 60 * 60 * 24 * 365;
+            
+            double numberOfBirthInYear = secondsInYear / numberOfBirthInSeconds; 
+            double numberOfDeathInYear = secondsInYear / numberOfDeathInSeconds;
+            double numberOfImmigrantInYear = secondsInYear / numberOfImmigrantInSeconds;
+            
+            currentPopulation = currentPopulation + numberOfBirthInYear + numberOfImmigrantInYear + numberOfDeathInYear;
+            System.out.println("Population of fifth year: " + (int)(currentPopulation * 5));
+        }
+} 
